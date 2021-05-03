@@ -1,0 +1,28 @@
+[
+  {
+    "name": "cicd_test2",
+    "image": "217261290616.dkr.ecr.us-east-1.amazonaws.com/cicd_test2:latest",
+    "memoryReservation": 512,
+    "portMappings": [
+      {
+        "containerPort": 3000,
+        "hostPort": 3000,
+        "protocol": "tcp"
+      }
+      
+    ],
+   "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "/ecs/cicd_test2",
+        "awslogs-region": "us-east-1",
+        "awslogs-stream-prefix": "ecs"
+        }
+    },
+    "environment": [
+    
+
+  ]
+  }
+
+ ]
